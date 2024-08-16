@@ -22,6 +22,7 @@
 
 body{
     background-color: var(--bgPrimary);
+    color: var(--textPrimary);
     font-family: var(--primaryFont);
     font-weight: 400;
 }
@@ -34,16 +35,46 @@ body{
     display: flex;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.section-description{
+    color: var(--textSecondary);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 1.8rem 0;
+}
+
+.btn-primary{
+    background-color: var(--textBrand);
+    color: var(--textPrimary);
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 1rem 2.8rem;
+    border-radius: 2.8rem;
+    margin-right: 2rem; 
+    border: none;
+}
+
+.btn-special{
+    border: 1px solid var(--textPrimary);
+    background: transparent;
+}
+
 
 /* Header section */
 
 .header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    /* background: linear-gradient(180deg, rgb(17, 17, 17) 0%, rgba(119, 119, 119, 0) 100%); */
+    background: linear-gradient(-180deg, rgb(17, 17, 17) 100%, rgba(119, 119, 119, 0) 0%);
 }
+
 .navbar{
     justify-content: space-between;
     align-items: center;
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 .navbar .brand{
     color: var(--textBrand);
@@ -72,7 +103,6 @@ body{
 
 .active{
     background-color: var(--textBrand);
-    color: var(--textPrimary);
     font-size: 1.125rem;
     font-weight: 600;
     padding: .5rem 1.25rem;
@@ -80,10 +110,88 @@ body{
 }
 
 .hamburgerMenu{
-    color: var(--textPrimary);
-    display: none;
     font-size: 2rem;
+    display: none;
 }
+
+/* banner section */
+
+.banner{
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.banner .banner-content,
+.banner .banner-img{
+    width: 50%;
+} 
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.banner-title .cursiveText{
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    font-size: 6rem;
+}
+
+.banner-img{
+    position: relative;
+}
+
+.banner-img img{
+    height: 80vh;
+}
+
+.banner-img .workout, 
+.banner .tutorial{
+    width: 12rem;
+    height: 6rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: .8rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    backdrop-filter: blur(1rem);
+    position: absolute;
+}
+
+.banner-img .workout{
+    top: 12rem;
+    right: 3rem;
+}
+
+.banner-img .tutorial{
+    bottom: 6rem;
+    left: -5rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.banner-img .workout h3,
+.banner .tutorial h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 3rem;
+}
+
+.banner-img .workout p,
+.banner .tutorial p{
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: var(--textSecondary);
+}
+
+.banner-img .fa-circle-play{
+    font-size: 2.5rem;
+    color: var(--textBrand);
+}
+
 
 
 
