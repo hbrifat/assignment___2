@@ -5,6 +5,10 @@
 :root{
     --primaryFont: "Inter", sans-serif;
     --secondaryFont: 'Miama', sans-serif;
+    --bgPrimary: rgb(0, 0, 0);
+    --textPrimary: rgb(255, 255, 255);
+    --textSecondary: rgba(255, 255, 255, 0.5);
+    --textBrand: rgb(230, 83, 60);
 }
 
 *{
@@ -16,9 +20,72 @@
 
 /* Shared styles */
 
+body{
+    background-color: var(--bgPrimary);
+    font-family: var(--primaryFont);
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.display-flex{
+    display: flex;
+}
 
 
 /* Header section */
+
+.header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.navbar .brand{
+    color: var(--textBrand);
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.navbar .nav-links{
+    gap: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: .5rem;
+    border-radius: 2.8rem;
+    margin: 0 1rem;
+}
+
+.navbar .nav-item{
+    list-style-type: none;
+}
+
+.navbar .nav-link{
+    text-decoration: none;
+    color: var(--textPrimary);
+    font-size: 1.125rem;
+}
+
+.active{
+    background-color: var(--textBrand);
+    color: var(--textPrimary);
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: .5rem 1.25rem;
+    border-radius: 2.8rem;
+}
+
+.hamburgerMenu{
+    color: var(--textPrimary);
+    display: none;
+    font-size: 2rem;
+}
+
+
 
 
 /* Main section */
@@ -31,5 +98,13 @@
 /* Responsive for mobile */
 
 @media screen and (max-width: 576px) {
-    
+    .navbar{
+        margin: 1rem 1rem;
+    }
+    .navbar .nav-links{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: block;
+    }
 }
