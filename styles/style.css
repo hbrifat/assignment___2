@@ -387,13 +387,62 @@ img{
 }
 
 
-
-
-
-
-
-
 /* Footer section */
+
+.footer{
+    background: #222222;
+}
+
+.footer-content{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.footer-info .section-title{
+    font-size: 3.5rem;
+    font-style: 600;
+    line-height: 4rem;
+    color: var(--textBrand);
+    font-style: italic;
+}
+
+.footer-info .section-description{
+    line-height: 1.5rem;
+}
+
+.footer-getStarted .section-title{
+    font-size: 2rem;
+    line-height: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+
+.footer-getStarted .link-item{
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.footer-getStarted .nav-link{
+    font-size: 1.25rem;
+    line-height: 1.125rem;
+    color: var(--textSecondary);
+    text-decoration: none;
+}
+
+.footer hr{
+    border: 1px solid var(--textSecondary);
+}
+
+.footer-bottom{
+    color: var(--textSecondary);
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
 
 
 
@@ -459,9 +508,11 @@ img{
     }
 
     .bmiCalc-content .chart,
-    .bmiCalc-content .bmi-form{
-        width: calc(100% - 6rem);
-        padding: 3rem;
+    .bmiCalc-content .bmi-form,
+    .footer-info,
+    .footer-getStarted{
+        width: calc(100% - 4rem);
+        padding: 2rem;
     }
 
     .bmiCalc-content .chart{
@@ -469,8 +520,12 @@ img{
     }
 
 
-    .team-gallery{
+    .team-gallery,
+    .footer-content{
         grid-template-columns: 1fr;
+    }
+
+    .team-gallery{
         justify-items: center;
         gap: 2rem;
     }
