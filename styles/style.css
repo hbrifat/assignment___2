@@ -344,6 +344,54 @@ img{
     margin-top: 1rem;
 }
 
+/* Team section */
+
+.team .section-info{
+    text-align: center;
+}
+
+.team-gallery{
+    background-color: #222222;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1.5fr);
+    gap: 1rem;  
+    border-radius: 1.5rem;
+}
+
+.team-gallery .team-gallery-item{
+    width: 22rem;
+    height: 20rem;
+    position: relative;
+}
+
+.team-gallery-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.125rem;
+    filter: drop-shadow(0 0 .5rem var(--textSecondary)); 
+    opacity: .85;   
+}
+
+.team-gallery-item .item-info{
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+}
+
+.gallery-item-title{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--textPrimary);
+}
+
+
+
+
+
+
+
 
 /* Footer section */
 
@@ -418,6 +466,13 @@ img{
 
     .bmiCalc-content .chart{
         align-self: center; 
+    }
+
+
+    .team-gallery{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 2rem;
     }
 
 
