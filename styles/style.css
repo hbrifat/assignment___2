@@ -33,7 +33,8 @@ body{
 }
 
 .main section {
-    padding: 7rem 0;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
 }
 
 .display-flex{
@@ -247,6 +248,26 @@ img{
     color: var(--textSecondary);
 }
 
+/* Extra Mile section */
+
+.extraMile{
+    align-items: center;
+    gap: 6rem;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    background-color: #222222;
+}
+
+.extraMile .section-info,
+.extraMile .extraMile-img{
+    width: calc(50% - 6rem);
+}
+
+.extraMile-img > img{
+    border-radius: 1.5rem;
+}
+
+
 
 /* Footer section */
 
@@ -294,10 +315,20 @@ img{
         left: -5rem;
     }
 
-    .habits .card-group{
+    .habits .card-group,
+    .extraMile{
         flex-direction: column;
     }
+    .extraMile{
+        margin: 0 2rem;
+        padding: 1rem;
+    }
 
-    
+    .extraMile .section-info,
+    .extraMile .extraMile-img{
+    width: calc(100% - 2rem);
+}
+
+
 
 }
