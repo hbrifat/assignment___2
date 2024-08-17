@@ -31,6 +31,11 @@ body{
     max-width: 1140px;
     margin: 0 auto;
 }
+
+.main section {
+    padding: 7rem 0;
+}
+
 .display-flex{
     display: flex;
 }
@@ -38,6 +43,17 @@ body{
 img{
     max-width: 100%;
     height: auto;
+}
+
+.section-info{
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+.section-title{
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 900;
 }
 
 .section-description{
@@ -193,10 +209,43 @@ img{
 }
 
 
-
-
-
 /* Main section */
+
+/* habits section */
+
+.habits .section-info{
+    text-align: center;
+}
+
+.card-group{
+    margin-top: 5rem;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.card-group .card{
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.card img{
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.card .img-title{
+    font-size: 1.125rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.card .img-description{
+    font-size: .8rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: var(--textSecondary);
+}
 
 
 /* Footer section */
@@ -245,8 +294,10 @@ img{
         left: -5rem;
     }
 
+    .habits .card-group{
+        flex-direction: column;
+    }
 
-
-
+    
 
 }
