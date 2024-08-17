@@ -223,6 +223,8 @@ img{
     margin-top: 5rem;
     justify-content: space-between;
     gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-group .card{
@@ -232,7 +234,7 @@ img{
 
 .card img{
     border-radius: 50%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .card .img-title{
