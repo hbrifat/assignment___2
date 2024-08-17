@@ -109,7 +109,7 @@ img{
     border-radius: 2.8rem;
 }
 
-.hamburgerMenu{
+#hamburgerMenu{
     font-size: 2rem;
     display: none;
 }
@@ -206,13 +206,47 @@ img{
 /* Responsive for mobile */
 
 @media screen and (max-width: 576px) {
+
     .navbar{
-        margin: 1rem 1rem;
+        margin: 1rem 2rem;
     }
     .navbar .nav-links{
         display: none;
     }
-    .hamburgerMenu{
+    #hamburgerMenu{
         display: block;
     }
+
+    .banner{
+        flex-direction: column;
+        height: auto;
+        margin-top: 4rem;
+    }
+
+    .banner .banner-content{
+        width: 90%;
+    }
+
+    .banner .btn-primary{
+        margin-right: 1rem;
+    }
+
+    .banner-img img{
+        height: auto;
+    }
+
+    .banner-img .workout{
+        top: 5rem;
+        right: -5rem;
+    }
+    
+    .banner-img .tutorial{
+        bottom: 3rem;
+        left: -5rem;
+    }
+
+
+
+
+
 }
