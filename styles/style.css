@@ -49,6 +49,7 @@ img{
 .section-info{
     max-width: 42rem;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 .section-title{
@@ -267,6 +268,79 @@ img{
     border-radius: 1.5rem;
 }
 
+/* BMI section */
+
+.bmiCalc .section-info{
+    margin-bottom: 2rem;
+}
+
+.bmiCalc-content{
+    background: #222222;
+    color: var(--textSecondary);
+}
+
+.bmiCalc-content .container{
+    gap: 6rem;
+}
+
+.bmiCalc-content .chart{
+    width: 40%;
+    padding: 3rem 0;
+}
+
+.bmiCalc-content .bmi-form{
+    width: 60%;
+    padding: 3rem 0;
+}
+
+.chart .chart-title,
+.bmi-form .bmi-form-title{
+    font-size: 1.8rem;
+    color: var(--textPrimary);
+}
+
+.chart .chart-table{
+    margin-top: 2rem;
+}
+
+.chart-table thead{
+    color: var(--textPrimary);
+}
+
+.chart .chart-table,
+.chart-table th,
+.chart-table td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    font-size: .8rem;
+    padding: 1rem 1.5rem;
+} 
+
+.bmi-form .calculate-bmi{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.calculate-bmi input,
+.calculate-bmi select{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border: none;
+    color: var(--textSecondary);
+    font-size: 1rem;
+}
+
+.calculate-bmi option{
+    background-color: #222222;
+    color: var(--textPrimary);
+}
+
+.bmi-form .btn-primary{
+    margin-top: 1rem;
+}
 
 
 /* Footer section */
@@ -316,7 +390,8 @@ img{
     }
 
     .habits .card-group,
-    .extraMile{
+    .extraMile,
+    .bmiCalc-content .container{
         flex-direction: column;
     }
     .extraMile{
@@ -327,7 +402,21 @@ img{
     .extraMile .section-info,
     .extraMile .extraMile-img{
     width: calc(100% - 2rem);
-}
+    }
+
+    .bmiCalc-content .container{
+        gap: 1rem;
+    }
+
+    .bmiCalc-content .chart,
+    .bmiCalc-content .bmi-form{
+        width: calc(100% - 6rem);
+        padding: 3rem;
+    }
+
+    .bmiCalc-content .chart{
+        align-self: center; 
+    }
 
 
 
